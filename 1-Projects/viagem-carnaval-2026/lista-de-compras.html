@@ -1,0 +1,321 @@
+<!DOCTYPE html><html><head><title></title><meta charset="utf-8"><style>* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	line-height: 1.6;
+	font-size: 0.6875em; /* 11 pt */
+	color: #111;
+	margin: 0;
+}
+
+body > :first-child {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+body > :last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0.5em 0 0.25em;
+}
+
+h5,
+h6 {
+	padding: 0;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+h6 {
+	font-size: 0.875em;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0.25em 0 1em;
+}
+
+blockquote {
+	margin: 0.5em 0 1em;
+	padding-left: 0.5em;
+	padding-right: 1em;
+	border-left: 4px solid gainsboro;
+	font-style: italic;
+}
+
+ul,
+ol {
+	margin: 0;
+	margin-left: 1em;
+	padding: 0 1.5em 0.5em;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code,
+p code,
+li code,
+pre code {
+	background-color: #f8f8f8;
+	padding: 0.1em 0.375em;
+	border: 1px solid #f8f8f8;
+	border-radius: 0.25em;
+	font-family: monospace;
+	font-size: 1.2em;
+}
+
+pre code {
+	display: block;
+	padding: 0.5em;
+}
+
+.page-break {
+	page-break-after: always;
+}
+
+img {
+	max-width: 100%;
+	margin: 1em 0;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	display: block;
+	margin: 0 0 1em;
+	width: 100%;
+	overflow: auto;
+}
+
+table th,
+table td {
+	padding: 0.5em 1em;
+	border: 1px solid gainsboro;
+}
+
+table th {
+	font-weight: 600;
+}
+
+table tr {
+	background-color: white;
+	border-top: 1px solid gainsboro;
+}
+
+table tr:nth-child(2n) {
+	background-color: whitesmoke;
+}
+/*# sourceURL=C:\Users\pri\AppData\Local\npm-cache\_npx\55158e48eb5c59f7\node_modules\md-to-pdf\markdown.css*/</style><style>pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+.hljs {
+  color: #24292e;
+  background: #ffffff
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #d73a49
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #6f42c1
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #005cc5
+}
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #032f62
+}
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #e36209
+}
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #6a737d
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #22863a
+}
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #24292e
+}
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold
+}
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #735c0f
+}
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #24292e;
+  font-style: italic
+}
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #24292e;
+  font-weight: bold
+}
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4
+}
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0
+}
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+  
+}/*# sourceURL=C:\Users\pri\AppData\Local\npm-cache\_npx\55158e48eb5c59f7\node_modules\highlight.js\styles\github.css*/</style></head>
+	<body class="">
+		<h1 id="lista-de-compras-minha-responsabilidade">Lista de Compras (minha responsabilidade)</h1>
+<h2 id="frutas-cafés-da-manhã-e-lanches">Frutas (cafés da manhã e lanches)</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Banana — 2,5 dúzias (~30 unidades, incluindo ~10 para banoffee)</li>
+<li><input disabled="" type="checkbox"> Maçã — 10 unidades</li>
+<li><input disabled="" type="checkbox"> Mamão formosa — 2 unidades</li>
+<li><input disabled="" type="checkbox"> Melancia — 1 grande</li>
+<li><input disabled="" type="checkbox"> Uva — 1,5 kg</li>
+<li><input disabled="" type="checkbox"> Morango — 500 g</li>
+<li><input disabled="" type="checkbox"> Manga — 4 unidades (as 6 da sobremesa já estão listadas à parte)</li>
+<li><input disabled="" type="checkbox"> Melão — 2 unidades</li>
+<li><input disabled="" type="checkbox"> Laranja — 2 dúzias (~24 unidades)</li>
+</ul>
+<h2 id="folhas-e-saladas">Folhas e Saladas</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Alface — 5 pés (almoço de domingo e segunda)</li>
+<li><input disabled="" type="checkbox"> Rúcula — 3 maços</li>
+</ul>
+<h2 id="tomates">Tomates</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Tomate italiano — 2 kg (saladas e vinagrete)</li>
+</ul>
+<h2 id="mandioca">Mandioca</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Mandioca — 3 kg (churrasco de segunda)</li>
+</ul>
+<h2 id="sobremesa-brownie-sábado-jantar--15-pessoas">Sobremesa: Brownie (sábado jantar — 15 pessoas)</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Chocolate meio amargo — 400 g</li>
+<li><input disabled="" type="checkbox"> Manteiga sem sal — 200 g</li>
+<li><input disabled="" type="checkbox"> Açúcar — 300 g</li>
+<li><input disabled="" type="checkbox"> Ovos — 5 unidades</li>
+<li><input disabled="" type="checkbox"> Farinha de trigo — 150 g</li>
+<li><input disabled="" type="checkbox"> Cacau em pó — 50 g</li>
+</ul>
+<h2 id="sobremesa-pudim-domingo-almoço--15-pessoas">Sobremesa: Pudim (domingo almoço — 15 pessoas)</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Leite condensado — 3 latas</li>
+<li><input disabled="" type="checkbox"> Leite integral — 3 medidas (usar a lata)</li>
+<li><input disabled="" type="checkbox"> Ovos — 10 unidades</li>
+<li><input disabled="" type="checkbox"> Açúcar para caramelo — 200 g</li>
+</ul>
+<h2 id="sobremesa-mousse-de-maracujá-domingo-almoço--15-pessoas">Sobremesa: Mousse de Maracujá (domingo almoço — 15 pessoas)</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Polpa de maracujá — 500 g</li>
+<li><input disabled="" type="checkbox"> Leite condensado — 2 latas</li>
+<li><input disabled="" type="checkbox"> Creme de leite — 2 caixas</li>
+</ul>
+<h2 id="sobremesa-abacaxi-assado-segunda-almoço--15-pessoas">Sobremesa: Abacaxi Assado (segunda almoço — 15 pessoas)</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Abacaxi — 3 unidades</li>
+<li><input disabled="" type="checkbox"> Açúcar demerara — 200 g</li>
+<li><input disabled="" type="checkbox"> Canela em pó — 1 frasco pequeno</li>
+</ul>
+<h2 id="sobremesa-manga-com-lemon-pepper-segunda-almoço--15-pessoas">Sobremesa: Manga com Lemon Pepper (segunda almoço — 15 pessoas)</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Manga palmer — 6 unidades</li>
+<li><input disabled="" type="checkbox"> Lemon pepper — 1 frasco</li>
+</ul>
+<h2 id="sobremesa-banoffee-desconstruída-segunda-almoço--15-pessoas">Sobremesa: Banoffee Desconstruída (segunda almoço — 15 pessoas)</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Doce de leite — 2 latas</li>
+<li><input disabled="" type="checkbox"> Banana (já contada acima, reservar ~10)</li>
+<li><input disabled="" type="checkbox"> Creme de leite fresco ou chantilly — 500 ml</li>
+<li><input disabled="" type="checkbox"> Biscoito maisena ou digestive — 1 pacote</li>
+</ul>
+
+	
+
+</body></html>
